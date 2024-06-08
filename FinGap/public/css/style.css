@@ -1,0 +1,39 @@
+
+body {
+    background-color: #2C3E50; /* Темный серо-голубой фон */
+    color: #ffffff; /* Белые шрифты */
+}
+header .navbar {
+    background-color: #34495e; /* Темный фон для навигации */
+}
+header a {
+    color: #ecf0f1; /* Белый текст для ссылок */
+    transition: color 0.3s;
+}
+header a:hover {
+    color: #d8b4fe; /* Светло-фиолетовый при наведении */
+}
+.btn-primary {
+    background-color: #e67e22; /* Оранжевый цвет кнопок */
+    border: none;
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #d35400; /* Более тёмный оранжевый при наведении */
+}
+.btn-secondary {
+    background-color: #6f42c1; /* Фиолетовый цвет кнопок */
+    border: none;
+    color: #ffffff;
+}
+.btn-secondary:hover {
+    background-color: #5a32a3; /* Более тёмный фиолетовый при наведении */
+}
+.pricing-header {
+    background-color: #34495e; /* Темный фон для заголовков */
+    border-radius: 10px;
+    padding: 2rem;
+}
+.pricing-header h1 {
+    color: #ffffff; /* Белый цвет для заголовков */
+}
