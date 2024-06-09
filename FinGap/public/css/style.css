@@ -10,13 +10,26 @@ header a {
     color: #ecf0f1; /* Белый текст для ссылок */
     transition: color 0.3s;
 }
+header{
+    line-height: 40px;
+}
+.header-div{
+    font-size: 20px;
+    height: 100px;
+}
+span{
+    font-size: 100px;
+}
 header a:hover {
     color: #d8b4fe; /* Светло-фиолетовый при наведении */
 }
 .btn-primary {
     background-color: #e67e22; /* Оранжевый цвет кнопок */
     border: none;
-    color: #ffffff;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-primary:hover {
     background-color: #d35400; /* Более тёмный оранжевый при наведении */
@@ -37,3 +50,20 @@ header a:hover {
 .pricing-header h1 {
     color: #ffffff; /* Белый цвет для заголовков */
 }
+
+.welcome-heading{
+    margin-bottom: 3.0rem; /* Отступ снизу */
+    margin-top: 3.0rem; /* Отступ снизу */
+}
+
+.welcome-text {
+    color: #ffffff; /* Темно-серый цвет текста */
+    font-size: 2.0rem; /* Увеличенный размер шрифта */
+    line-height: 1.6; /* Увеличенная межстрочная высота */
+    max-width: 1220px; /* Ограниченная ширина для текста */
+    margin: 0 auto; /* Центрирование текста */
+    padding: 0 1rem; /* Внутренние отступы по бокам */
+}
+
+
+

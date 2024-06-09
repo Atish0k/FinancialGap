@@ -3,9 +3,9 @@
 @section('title')Главная страница@endsection
 
 @section('main_content')
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal">Главная</h1>
-        <p>Быстро создайте эффективную таблицу цен для ваших потенциальных клиентов с этим примером Bootstrap. Она построена с использованием стандартных компонентов и утилит Bootstrap с минимальными настройками.</p>
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center welcome-section">
+        <h1 class="display-4 fw-normal welcome-heading">Добро пожаловать!</h1>
+        <p class="welcome-text">Мы рады приветствовать вас на нашем сайте и в нашей школе, где каждый найдет для себя полезные знания и навыки в области финансов. Наша миссия — сделать финансовую грамотность доступной для всех, помочь вам уверенно управлять своими деньгами и принимать обоснованные финансовые решения.</p>
     </div>
 
     <main>
