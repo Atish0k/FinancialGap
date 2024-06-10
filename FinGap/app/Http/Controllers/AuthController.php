@@ -29,11 +29,12 @@ class AuthController extends Controller
             'email' => $validatedData['email'],
             'password' => Hash::make($validatedData['password']),
         ]);
+        $user->assignRole('user');
 
         // Аутентификация пользователя
         Auth::login($user);
 
-        return redirect('/home');
+        return redirect('/');
     }
 
     public function showLoginForm()
@@ -52,7 +53,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('home');
+            return redirect()->intended('/');
         }
 
         return back()->withErrors([

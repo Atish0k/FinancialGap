@@ -24,6 +24,8 @@ Route::post('/review/check', [MainController::class, 'review_check']);
 
 
 
+
+
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -32,3 +34,11 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 //Route::get('/user/{id}/{name}', function ($id, $name) {
 //    return 'id '. $id. '. Name: ' . $name ;
 //});
+
+
+Route::middleware(['role:admin'])->prefix('admin_panel')->group(function () {
+    Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
+
+    Route::resource('category', \App\Http\Controllers\Admin\CategoryController::class);
+    Route::resource('post', \App\Http\Controllers\Admin\PostController::class);
+});

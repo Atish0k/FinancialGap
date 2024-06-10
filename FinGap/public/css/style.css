@@ -31,6 +31,9 @@ header a:hover {
     align-items: center;
     justify-content: center;
 }
+.btn-logout{
+    margin-top: 8px;
+}
 .btn-primary:hover {
     background-color: #d35400; /* Более тёмный оранжевый при наведении */
 }
@@ -63,6 +66,10 @@ header a:hover {
     max-width: 1220px; /* Ограниченная ширина для текста */
     margin: 0 auto; /* Центрирование текста */
     padding: 0 1rem; /* Внутренние отступы по бокам */
+}
+.dv1{
+    text-align: right;
+    margin-top: 20px;
 }
 
 
